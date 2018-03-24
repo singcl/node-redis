@@ -1,0 +1,52 @@
+{
+  "name": "node-redis",
+  "version": "0.0.1",
+  "description": "A redis cluster config by nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:7000": "cd redis && redis-server.exe --service-install 7000/redis.7000.conf --service-name redis7000",
+    "start:7000": "cd redis && redis-server.exe --service-start --service-name redis7000",
+    "stop:7000": "cd redis && redis-server.exe --service-stop --service-name redis7000",
+    "uninstall:7000": "cd redis && redis-server.exe --service-uninstall --service-name redis7000",
+
+    "install:7001": "cd redis && redis-server.exe --service-install 7001/redis.7001.conf --service-name redis7001",
+    "start:7001": "cd redis && redis-server.exe --service-start --service-name redis7001",
+    "stop:7001": "cd redis && redis-server.exe --service-stop --service-name redis7001",
+    "uninstall:7001": "cd redis && redis-server.exe --service-uninstall --service-name redis7001",
+
+    "install:7002": "cd redis && redis-server.exe --service-install 7002/redis.7002.conf --service-name redis7002",
+    "start:7002": "cd redis && redis-server.exe --service-start --service-name redis7002",
+    "stop:7002": "cd redis && redis-server.exe --service-stop --service-name redis7002",
+    "uninstall:7002": "cd redis && redis-server.exe --service-uninstall --service-name redis7002",
+
+    "install:7003": "cd redis && redis-server.exe --service-install 7003/redis.7003.conf --service-name redis7003",
+    "start:7003": "cd redis && redis-server.exe --service-start --service-name redis7003",
+    "stop:7003": "cd redis && redis-server.exe --service-stop --service-name redis7003",
+    "uninstall:7003": "cd redis && redis-server.exe --service-uninstall --service-name redis7003",
+
+    "install:7004": "cd redis && redis-server.exe --service-install 7004/redis.7004.conf --service-name redis7004",
+    "start:7004": "cd redis && redis-server.exe --service-start --service-name redis7004",
+    "stop:7004": "cd redis && redis-server.exe --service-stop --service-name redis7004",
+    "uninstall:7004": "cd redis && redis-server.exe --service-uninstall --service-name redis7004",
+
+    "install:7005": "cd redis && redis-server.exe --service-install 7005/redis.7005.conf --service-name redis7005",
+    "start:7005": "cd redis && redis-server.exe --service-start --service-name redis7005",
+    "stop:7005": "cd redis && redis-server.exe --service-stop --service-name redis7005",
+    "uninstall:7005": "cd redis && redis-server.exe --service-uninstall --service-name redis7005",
+
+    "install": "npm run install:7000 && npm run install:7001 && npm run install:7002 && npm run install:7003 && npm run install:7004 && npm run install:7005",
+    "start": "npm run start:7000 && npm run start:7001 && npm run start:7002 && npm run start:7003 && npm run start:7004 && npm run start:7005",
+    "stop": "npm run stop:7000 && npm run stop:7001 && npm run stop:7002 && npm run stop:7003 && npm run stop:7004 && npm run stop:7005",
+    "uninstall": "npm run uninstall:7000 && npm run uninstall:7001 && npm run uninstall:7002 && npm run uninstall:7003 && npm run uninstall:7004 && npm run uninstall:7005",
+
+    "cluster": "ruby redis-trib.rb create --replicas 1 127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005"
+  },
+  "keywords": [
+    "redis",
+    "nodejs",
+    "cluster"
+  ],
+  "author": "singcl",
+  "license": "MIT"
+}
