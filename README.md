@@ -1,4 +1,4 @@
-## 如何Ruby 创建Redis 集群。
+## 如何使用Ruby 创建Redis 集群。
 
 ### Redis cluster construction for building with nodejs.
  
@@ -10,3 +10,5 @@
 - `npm run uninstall` 卸载这6个之前配置的windows服务。
 
 - `npm run cluster` 将上面6个redis 节点连接成集群模式。
+
+*项目中redis文件夹是对官方redis安装包的一份拷贝。其中7000-7005文件夹是我自己添加的*
