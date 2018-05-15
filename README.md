@@ -17,6 +17,7 @@
 
 在`example` 目录下分别给出通过ruby和js链接到redis集群进行操作的简单示例。
 
+#### NODE.JS
 ```js
 // ioredis 链接到redis 集群
 // @singcl/acl 对集群进行Acl权限数据读写
@@ -68,6 +69,7 @@ acl.whatResources('member', function(err, r) {
 })
 ```
 
+#### RUBY
 ```rb
 require './cluster'
 
