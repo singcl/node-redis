@@ -4,6 +4,8 @@
  
 ### 使用
 
+*环境配置：Ruby 和 Ruby Gem*
+
 - `npm run installs` 将6个redis节点配置成windows 服务. 这样每次就会开机自启没用每次都是手动开启。
 - `npm run start` 启动这个6个redis 节点服务。
 - `npm run stop` 结束这个6个redis 节点服务。
